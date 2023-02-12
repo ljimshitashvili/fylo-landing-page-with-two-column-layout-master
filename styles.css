@@ -1,0 +1,29 @@
+body{
+    padding: 24px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    background-image: url("fylo-landing-page-with-two-column-layout-master/images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 80px 24px ;
+    height: 24px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 24px;
+}
+
+a, 
+a:hover, 
+a:active, 
+a:visited, 
+a:link{
+    text-decoration: none;
+    color: #07043B;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
