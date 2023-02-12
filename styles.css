@@ -502,6 +502,17 @@ footer a:link{
         height: 27px;
     }
 
+    /* desktop active */
 
+    #submit:hover, #free:hover{
+        background-color: #6C9BFF; 
+    }
+
+    header a:hover{
+        color: #2F65F8; 
+    }
+
+
+    
 }
 
