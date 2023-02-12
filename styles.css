@@ -14,7 +14,6 @@ header{
     background-repeat: no-repeat;
     background-size: 80px 24px;
     background-position: top 24px left 24px;
-    height: 24px;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -22,11 +21,11 @@ header{
     padding: 24px;
 }
 
-a, 
-a:hover, 
-a:active, 
-a:visited, 
-a:link{
+header a, 
+header a:hover, 
+header a:active, 
+header a:visited, 
+header a:link{
     text-decoration: none;
     color: #07043B;
     font-weight: 400;
@@ -88,6 +87,13 @@ main{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+}
+
+.first-input,
+.second-input{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .section-2{
@@ -239,7 +245,7 @@ footer{
     padding: 39px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
     background-color: #07043B;
     color: #FFFFFF;
 }
@@ -254,8 +260,6 @@ footer a:link{
     font-weight: 400;
     font-size: 16px;
     line-height: 21.79px;
-}{
-    color: #FFFFFF;
 }
 
 .logo{
@@ -268,7 +272,236 @@ footer a:link{
     align-items: center;
 }
 
-.fylo{
-    margin-bottom: 16px;
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.icons{
+    width: 101px;
+    height: 27px;
+}
+
+@media (min-width: 1024px){
+
+    header{
+        background-size: 166px 49px;
+        background-position: top 65px left 80px;
+        gap: 57px;
+        padding: 80px;
+    }
+
+    header a, 
+    header a:hover, 
+    header a:active, 
+    header a:visited, 
+    header a:link{
+        text-decoration: none;
+        color: #07043B;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    main{
+        padding: 0 80px;
+    }
+    
+    .section-1{
+        align-items: start;
+        background-size: 640px 474px;
+        background-position-y: 0;
+        background-position-x: right;
+        padding-top: 80px;
+    }
+    
+    .section-1 h1{
+        font-size: 40px;
+        line-height: 60px;
+        text-align: left;
+        max-width: 627px;
+    }
+    
+    .section-1 p{
+        font-size: 17px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 15px;
+        max-width: 585px;
+    }
+
+    .first-input{
+        flex-direction: unset;
+        align-items: center;
+        margin-top: 25px;
+    }
+    
+    #email{
+        width: 320px;
+        height: 45px;
+        margin: 0 16px 0 0;
+    }
+    
+    #submit{
+        width: 200px;
+        height: 47px;
+    }
+
+
+    .section-2{
+        align-items: start;
+        background-size: 542px 409px;
+        background-position-y: 20px;
+        background-position-x: right;
+        margin-top: 360px;
+        padding: 0;
+    }
+    
+    .section-2 h1{
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom: 22px;
+    }
+    
+    .section-2 p{
+        color: #07043B;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        max-width: 529px;
+    }
+    
+    #green{
+        font-size: 16px;
+        line-height: 22px;
+        margin: 15px 0 50px 0;
+    }
+    
+    .card{
+        max-width: 356px;
+        height: 215px;
+        border-radius: 5px;
+        padding: 0 33px 0 34px;
+    }
+    
+    .card p{
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0.5px;
+    }
+    
+    .user{
+        gap: 8px;
+        margin-top: 16px;
+    }
+    
+    .user h2{
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.55px;
+    }
+    
+    .user p{
+        font-size: 8px;
+        line-height: 15px;
+        letter-spacing: 0.4px;
+    }
+    
+    .user img{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .section-3{
+        padding: 80px;
+        margin: 107px 0 0 -80px;
+        flex-direction: unset;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .section-3 div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section-3 h1{
+        font-size: 32px;
+        line-height: 48px;
+        margin: 20px 0 17px 0;
+        max-width: 347px;
+    }
+    
+    .section-3 p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        max-width: 533px;
+    }
+    
+    #example{
+        width: 480px;
+        height: 48px;
+        padding: 0 22px;
+        margin-bottom: 16px;
+    }
+    
+    #free{
+        width: 200px;
+        height: 48px;
+    }
+
+    footer{
+        padding: 100px 80px;
+        flex-direction: unset;
+        gap: 200px;
+        position: relative;
+    }
+    
+    footer a, 
+    footer a:hover, 
+    footer a:active, 
+    footer a:visited, 
+    footer a:link{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21.79px;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 80px;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px
+    }
+    
+    .contact{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        min-width: 230px;    
+    }
+
+    .icons{
+        width: 101px;
+        height: 27px;
+    }
+
+
 }
 
