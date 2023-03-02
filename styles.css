@@ -1,3 +1,8 @@
+:root{
+    --green: #00FF00;
+    --red: #FF0000;
+}
+
 body{
     font-family: 'Barlow', sans-serif;
     font-family: 'Raleway', sans-serif;
@@ -37,6 +42,34 @@ main{
     padding: 0 24px;
 }
 
+.correct{
+    border: 2px solid var(--green);
+}
+
+.incorrect{
+    border: 2px solid var(--red);
+}
+
+.green{
+    display: none;
+    color: var(--green);
+    font-size: 17px;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.red{
+    display: none;
+    color: var(--red);
+    font-size: 17px;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 10px;
+    max-width: 585px;
+}
+
 .section-1{
     display: flex;
     flex-direction: column;
@@ -47,6 +80,11 @@ main{
     background-position-y: 100px;
     background-position-x: center;
     padding-top: 360px;
+}
+
+h6{
+    width: 100%;
+    text-align: left;
 }
 
 .section-1 h1{
@@ -71,7 +109,6 @@ main{
 #email{
     width: 262px;
     height: 40px;
-    border: 1px solid black;
     border-radius: 3.13px;
     padding: 0 21px;
     margin: 32px 0 16px 0;
@@ -93,7 +130,8 @@ main{
 .second-input{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    justify-content: left;
 }
 
 .section-2{
@@ -225,8 +263,6 @@ main{
     height: 40px;
     border-radius: 3.13px;
     padding: 0 8px;
-    margin-bottom: 8px;
-    border: none;
 }
 
 #free{
@@ -239,6 +275,7 @@ main{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    margin-top: 16px;
 }
 
 footer{
@@ -339,7 +376,7 @@ footer a:link{
 
     .first-input{
         flex-direction: unset;
-        align-items: center;
+        align-items: start;
         margin-top: 25px;
     }
     
@@ -451,7 +488,6 @@ footer a:link{
         width: 480px;
         height: 48px;
         padding: 0 22px;
-        margin-bottom: 16px;
     }
     
     #free{
